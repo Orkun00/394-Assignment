@@ -1,0 +1,48 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tradeIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trade ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stockSymbolTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Stock Symbol"
+        app:layout_constraintTop_toBottomOf="@id/tradeIdTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/purchasePriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Purchase Price"
+        app:layout_constraintTop_toBottomOf="@id/stockSymbolTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/salePriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sale Price"
+        app:layout_constraintTop_toBottomOf="@id/purchasePriceTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tradeDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trade Date"
+        app:layout_constraintTop_toBottomOf="@id/salePriceTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

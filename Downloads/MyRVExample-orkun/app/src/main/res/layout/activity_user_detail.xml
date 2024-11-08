@@ -1,0 +1,70 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <!-- No need for variables if we're setting values directly in code -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Trade ID TextView -->
+        <TextView
+            android:id="@+id/tradeIdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trade ID"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Stock Symbol TextView -->
+        <TextView
+            android:id="@+id/stockSymbolView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock Symbol"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tradeIdView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Purchase Price TextView -->
+        <TextView
+            android:id="@+id/purchasePriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purchase Price"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/stockSymbolView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Sale Price TextView -->
+        <TextView
+            android:id="@+id/salePriceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sale Price"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/purchasePriceView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Trade Date TextView -->
+        <TextView
+            android:id="@+id/tradeDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trade Date"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/salePriceView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
